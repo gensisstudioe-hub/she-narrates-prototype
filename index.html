@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She Narrates – Feminist Cognitive Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <video class="hero-video" autoplay muted loop>
+    <source src="https://drive.google.com/uc?export=download&id=1BLizVeJ59JYO9JiVGuXVmANxcgeC2nwp" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h1>She Narrates</h1>
+    <p>A Feminist Cognitive & Storytelling Platform Prototype</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#challenge">Quick Challenges</a>
+  <a href="#stories">Story Writing</a>
+  <a href="#cognitive">Cognitive Games</a>
+</nav>
+
+<section id="challenge" class="section">
+  <h2>✨ Creative Micro‑Challenges (1–3 minutes)</h2>
+  <div class="card">
+    <p>Press the button to generate an emotional‑awareness or reflection challenge.</p>
+    <button onclick="generateIdea()">Generate Challenge</button>
+    <div id="ideaBox" class="idea-box"></div>
+    <div id="score" class="score">Score: 0</div>
+  </div>
+</section>
+
+<section id="stories" class="section">
+  <h2>📝 Share Your Short Story</h2>
+  <div class="card">
+    <textarea id="storyText" rows="4" placeholder="Write a moment of awareness, a memory, or a brief story..."></textarea>
+    <button onclick="publishStory()">Publish Story</button>
+  </div>
+
+  <h3>Latest Stories:</h3>
+  <div id="storyFeed"></div>
+</section>
+
+<section id="cognitive" class="section">
+  <h2>🧠 Cognitive Memory Game</h2>
+  <div class="card">
+    <p>Test your focus! Choose the correct color within 3 seconds.</p>
+    <button onclick="startCognitiveGame()">Start Game</button>
+    <div id="cognitiveBox" class="idea-box"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
